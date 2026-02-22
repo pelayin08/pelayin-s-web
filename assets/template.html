@@ -3,8 +3,11 @@
 <head>
     <script>
         const saved_dark_mode = localStorage.getItem("darkMode");
-        if (saved_dark_mode === "enabled") {
+        if (saved_dark_mode === "enabled" || saved_dark_mode === null) {
             document.body.classList.add("dark-mode");
+        }
+        if (saved_dark_mode === null) {
+            localStorage.setItem("darkMode","enabled");
         }
     </script>
     <meta charset="UTF-8">
@@ -22,7 +25,7 @@
     <title>{{page_title}}</title>
     <link rel="stylesheet" href="{{css_path}}">
 </head>
-<body class="dark-mode">
+<body>
     <div class="container">
         <div class="header-box">
             <h1>{{title}}</h1>
