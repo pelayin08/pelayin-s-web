@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Make script executable
+      run: chmod +x ./generate.sh
+      
     - name: Generate pages (script runs gallery_generator with python3 for each page)
       run: |
         pip install markdown
