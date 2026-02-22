@@ -82,7 +82,7 @@ function toggle_dark_mode() {
     body.classList.toggle("dark-mode");
 
     const is_dark = body.classList.contains("dark-mode");
-    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+    localStorage.setItem("darkMode", is_dark ? "enabled" : "disabled");
 }
 
 var last_zoom_x = 0;
