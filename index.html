@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="9551Dev's electronics gallery" property="og:title" />
+    <meta content="An image gallery consisting of things i find fit to be posted and want to share around, contributions to galleries are also welcome" property="og:description" />
+    <meta content="https://zap.devvie.cc" property="og:url" />
+    <meta content="https://zap.devvie.cc/gal/radioburza/brezen_2024/images/GAL_IMG_0754.jpg" property="og:image" />
+    <meta content="#80d3d4" data-react-helmet="true" name="theme-color" />
+    <title>9551Dev's Electronics Gallery</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .rainbow-text {
+            font-weight: bold;
+            animation: rainbow-animation 7s infinite linear;
+        }
+
+        @keyframes rainbow-animation {
+            0%   {color: hsl(0, 100%, 50%);}
+            5%   {color: hsl(36, 100%, 50%);}
+            10%  {color: hsl(72, 100%, 50%);}
+            15%  {color: hsl(144, 100%, 50%);}
+            20%  {color: hsl(216, 100%, 50%);}
+            25%  {color: hsl(288, 100%, 50%);}
+            30%  {color: hsl(324, 100%, 50%);}
+            35%  {color: hsl(0, 100%, 50%);}
+            40%  {color: hsl(36, 100%, 50%);}
+            45%  {color: hsl(72, 100%, 50%);}
+            50%  {color: hsl(144, 100%, 50%);}
+            55%  {color: hsl(72, 100%, 50%);}
+            60%  {color: hsl(36, 100%, 50%);}
+            65%  {color: hsl(0, 100%, 50%);}
+            70%  {color: hsl(324, 100%, 50%);}
+            75%  {color: hsl(288, 100%, 50%);}
+            80%  {color: hsl(216, 100%, 50%);}
+            85%  {color: hsl(144, 100%, 50%);}
+            90%  {color: hsl(72, 100%, 50%);}
+            95%  {color: hsl(36, 100%, 50%);}
+            100% {color: hsl(0, 100%, 50%);}
+        }
+
+        .outer-container {
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #fff;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(50, 50, 50, 0.8);
+            position: relative;
+        }
+
+        .outer-container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            background: linear-gradient(135deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, transparent 60%, transparent 100%);
+            z-index: -1;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+            text-shadow:
+                -2px -2px 0 #000,
+                 2px -2px 0 #000,
+                -2px  2px 0 #000,
+                 2px  2px 0 #000,
+                -2px  0   0 #000,
+                 2px  0   0 #000,
+                 0   -2px 0 #000,
+                 0    2px 0 #000;
+        } /* im gonna go fucking insane */
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        body {
+            animation: gradient 15s ease infinite;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 20%, #4facfe 40%, #43e97b 60%, #38f9d7 80%, #3c40c6 100%);
+            background-size: 200% 200%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <h1><span class="rainbow-text">9551Dev's</span> Electronics Gallery</h1>
+            <ul>
+                <li><strong><a href="https://github.com/9551-Dev" style="color:#4facfe">GitHub</a></strong></li>
+            </ul>
+            <div>
+                <a href="./g/" class="btn">Browse Gallery</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

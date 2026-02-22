@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    {{embed_enable_start}}
+    <meta content="{{embed_title}}" property="og:title" />
+    <meta content="{{embed_description}}" property="og:description" />
+    <meta content="{{embed_url}}" property="og:url" />
+    <meta content="{{embed_image}}" property="og:image" />
+    <meta content="{{embed_color}}" data-react-helmet="true" name="theme-color" />
+    {{embed_enable_end}}
+
+    <title>{{page_title}}</title>
+    <link rel="stylesheet" href="{{css_path}}">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <div class="header-box">
+            <h1>{{title}}</h1>
+            <div class="button-container">
+                <button class="header-btn back-button" onclick="location.href='..'">Back</button>
+                <div class="button-wrapper">
+                    <button class="header-btn-lightmode" onclick="toggle_dark_mode()">Toggle Light Mode</button>
+                    <button class="header-btn-dir" onclick="location.href='./dir.html'">View directory</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="markdown-container" {{markdown_container_properties}}>
+    {{markdown}}
+            </div>
+            <div class="gallery">
+    {{image_tags}}
+            </div>
+
+            <div class="image-viewer" onclick="close_image_viewer()">
+                <span class="close-btn" onclick="close_image_viewer()">&times;</span>
+                <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
+                <div class="nav-arrows">
+                    <div class="nav-arrow nav-arrow-left" onclick="navigate_image(event, -1)">&#8249;</div>
+                    <div class="nav-arrow nav-arrow-right" onclick="navigate_image(event, 1)">&#8250;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="github-link">
+            <a href="https://github.com/9551-Dev">
+                <img src="https://github.com/9551-Dev.png" alt="github icon">
+            </a>
+        </div>
+    </div>
+
+    <script src="{{js_path}}"></script>
+</body>

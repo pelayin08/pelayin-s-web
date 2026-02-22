@@ -1,0 +1,27 @@
+name: GitHub Pages
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    name: Build page
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Generate pages (script runs gallery_generator with python3 for each page)
+      run: |
+        pip install markdown
+        ./generate.sh
+    - name: Move and create extra files for page and github config
+      run: |
+        touch docs/.nojekyll
+        cp index.html docs/index.html
+        cp CNAME docs/CNAME
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        force_orphan: true
+        commit_message: Build for

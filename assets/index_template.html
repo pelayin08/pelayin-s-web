@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{header}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #222;
+            color: #ddd;
+            font-size: 18px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        li:hover {
+            background-color: #555;
+        }
+        li a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 20px;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        .index_self {
+            background-color: #444;
+            color: #999;
+        }
+        .index_directory {
+            background-color: rgb(67, 135, 198);
+            color: #ffffff;
+        }
+        .index_file {
+            background-color: #008b7b;
+            color: #fff;
+        }
+
+        button {
+            background-color: transparent;
+            color: #007bff;
+            border: 1px solid #007bff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 8px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+            li,
+            li a {
+                font-size: 12px;
+            }
+            button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <ul>
+        {{directory_list}}
+    </ul>
+    {{comment_start}}<button onclick="location.href='..';">.. (zap.devvie.cc{{parent}})</button>{{comment_end}}
+</body>
+</html>

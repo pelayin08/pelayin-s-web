@@ -1,0 +1,6 @@
+pictures/lab/storage_2024_03_07/.tmp/*
+pictures/radioburza/leden_2024/.tmp/*
+
+!.gitignore
+!.nojekyll
+!.github
