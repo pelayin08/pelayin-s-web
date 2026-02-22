@@ -78,8 +78,11 @@ function update_image_viewer() {
 }
 
 function toggle_dark_mode() {
-    var body = document.body;
+    const body = document.body;
     body.classList.toggle("dark-mode");
+
+    const is_dark = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
 }
 
 var last_zoom_x = 0;
