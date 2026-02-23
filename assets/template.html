@@ -40,7 +40,11 @@
         <div class="content">
             <div class="markdown-container" {{markdown_container_properties}}>
     {{markdown}}
+        </div>
+        <div class="gallery">
 
+    {{image_tags}}
+        </div>
             <div class="image-viewer" onclick="close_image_viewer()">
                 <span class="close-btn" onclick="close_image_viewer()">&times;</span>
                 <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
