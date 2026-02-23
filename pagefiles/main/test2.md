@@ -6,6 +6,6 @@ hi
 hihihihih
  hi
 
-![hello xd](__IMAGE__/bee.png)
+!(__IMAGE__/bee.png)
 
  meow
