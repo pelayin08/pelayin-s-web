@@ -6,6 +6,6 @@ hi
 hihihihih
  hi
 
-(__IMAGE__/bee.jpg)
+(__IMAGE__/bee.png)
 
  meow
