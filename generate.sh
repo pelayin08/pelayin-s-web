@@ -4,7 +4,7 @@ COMMON_CONFIG="./assets/common_config.ini"
 
 declare -a GALLERY_CONFIGS=(
     "config/Projects/test.ini"
-    "config/Biography/test2.ini"
+    "config/Biography.ini"
 )
 
 for config in "${GALLERY_CONFIGS[@]}"; do
