@@ -3,7 +3,7 @@
 COMMON_CONFIG="./assets/common_config.ini"
 
 declare -a GALLERY_CONFIGS=(
-    "config/mainr/test.ini"
+    "config/main/test.ini"
     "config/mainr/test2.ini"
 )
 
