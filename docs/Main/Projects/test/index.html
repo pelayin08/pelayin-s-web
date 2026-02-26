@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    
+    <meta content="Testing" property="og:title" />
+    <meta content="Hi, hello, testing" property="og:description" />
+    <meta content="https://github.com/9551-Dev" property="og:url" />
+    <meta content="https://github.com/9551-Dev.png" property="og:image" />
+    <meta content="#ff8156" data-react-helmet="true" name="theme-color" />
+    
+
+    <title>Meow</title>
+    <link rel="stylesheet" href="core/style.css">
+</head>
+<body>
+    <script>
+        const saved_dark_mode = localStorage.getItem("darkMode");
+        if (saved_dark_mode === "enabled" || saved_dark_mode === null) {
+            document.body.classList.add("dark-mode");
+        }
+        if (saved_dark_mode === null) {
+            localStorage.setItem("darkMode","enabled");
+        }
+    </script>
+    <div class="container">
+        <div class="header-box">
+            <h1><span style='color:DodgerBlue'>Test V1</span></h1>
+            <div class="button-container">
+                <button class="header-btn back-button" onclick="location.href='..'">Back</button>
+                <div class="button-wrapper">
+                    <button class="header-btn-lightmode" onclick="toggle_dark_mode()">Toggle Light Mode</button>
+                    <button class="header-btn-dir" onclick="location.href='./dir.html'">View directory</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="markdown-container" >
+    <h1>hello world</h1>
+<p>Hi</p>
+        </div>
+        <div class="gallery">
+
+                <img src="images/./bee.jpg" alt="bee.jpg" onclick="open_image_viewer('images/./bee.jpg')">
+        </div>
+            <div class="image-viewer" onclick="close_image_viewer()">
+                <span class="close-btn" onclick="close_image_viewer()">&times;</span>
+                <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
+                <div class="nav-arrows">
+                    <div class="nav-arrow nav-arrow-left" onclick="navigate_image(event, -1)">&#8249;</div>
+                    <div class="nav-arrow nav-arrow-right" onclick="navigate_image(event, 1)">&#8250;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="core/script.js"></script>
+</body>
