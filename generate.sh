@@ -3,7 +3,7 @@
 COMMON_CONFIG="./assets/common_config.ini"
 
 declare -a GALLERY_CONFIGS=(
-    "config/Projects/HFVTTC 1.ini"
+    "config/Projects/hfvttc1.ini"
     "config/Biography/Biography.ini"
 )
 
