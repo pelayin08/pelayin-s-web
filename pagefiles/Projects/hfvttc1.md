@@ -38,8 +38,11 @@ Now the performance improved to what I expected and even more 😍, eliminating 
 Unlike the HFVTTC in Teslaundmehr’s video (which produced a nice stable CW flame), my circuit produced a strong sound at the mains frequency and the flame takes on the shape of that frequency (a mix between Teslaundmehr’s plasma flame and Styropyro’s diabolical ray). I’m not worried because I know that can be fixed with a full bridge or by increasing the capacitance.
 here are some photos of the results along with a video
 
-ffoottoo
+![circuit_off](__IMAGE__/test2/circuit_off.jpg)
+![circuit_on](__IMAGE__/test2/circuit_on.jpg)
+![arc](__IMAGE__/test2/arc.jpg)
 
 in conclusion I ended up quite happy with this project even though my GU-50 didn’t like it that much
 
-ffoottoo
+![hot_tube](__IMAGE__/tube/hot_tube.jpg)
+![melted_tube](__IMAGE__/tube/melted_tube.jpg)
