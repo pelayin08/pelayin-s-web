@@ -36,7 +36,7 @@ on top of that, because of using flexible cable it couldn’t handle the weight 
 I knew it had something to do with the resonator and capacitive feedback, so I rewound the resonator (this time using solid wire), removed the ball where the plasma was supposed to form, and replaced the two-plate feedback capacitor with a ring-shaped one.
 Now the performance improved to what I expected and even more 😍, eliminating a large part of the reactive consumption and managing to generate a flame of more than 9 cm.
 Unlike the HFVTTC in Teslaundmehr’s video (which produced a nice stable CW flame), my circuit produced a strong sound at the mains frequency and the flame takes on the shape of that frequency (a mix between Teslaundmehr’s plasma flame and Styropyro’s diabolical ray). I’m not worried because I know that can be fixed with a full bridge or by increasing the capacitance.
-here are some photos of the results along with a video
+here are some photos of the results along with a **[video](https://youtu.be/OfAEsscIMT4?si=tuIm_JnlAh6A4bfI)**
 
 ![circuit_off](__IMAGE__/test2/circuit_off.jpg)
 ![circuit_on](__IMAGE__/test2/circuit_on.jpg)
