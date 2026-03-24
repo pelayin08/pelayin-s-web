@@ -1,0 +1,49 @@
+# BIOGRAPHY
+
+Hi, my name is Pelayo and I am a 17 year old Spanish guy fond of electronics and RF, although I also like audio and sound.
+
+
+In electronics I usually do things like:
+
+- audio amplifiers
+- laser.
+- experimenting with leds of different colors and powers, and some homemade flashlight
+- oscillators(although this could also fall into RF)
+- random useless devices but that are funny
+
+And within electronics I also love high voltage and I made things like tesla coils, flyback inverters...
+
+
+In RF I am a bit newer but I also do things like:
+
+- listening to the spectrum with an sdr and decoding
+- transmitting **IN LOW POWER** at different frequencies
+- copying remotes
+- transmitting digital signals with cheap modules
+- a bit of RFID
+
+
+I am also an excellent programmer (lie, I know some C++ and that's it)
+
+<br>
+For a few months now I started to like vacuum tubes and for now I am collecting them, and I hope to use them someday. My favorite tubes are the Soviet ones ☭♥️
+
+<br>
+At some point in my life I would like to:
+
+- get my amateur radio license(I was going to do it but I got lazy)
+- try different gas discharge lamps
+- use vacuum tubes
+
+I am short on money, that also limits me from doing things :c
+
+<br>
+finally here are some useless facts about me:
+
+- I am a bit shy
+- the wavelength of my favorite color is 445nm
+- my favorite instrument is the synthesizer, and the second favorite the electric guitar
+- I love cores and the backrooms
+- I find it very practical to make lists(it can be noticed by reading my biography)
+
+and I think that is all you need to know about me :)

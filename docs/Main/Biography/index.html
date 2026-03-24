@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    
+    <meta content="my biography" property="og:title" />
+    <meta content="Here I talk about myself and what I do" property="og:description" />
+    <meta content="https://github.com/9551-Dev" property="og:url" />
+    <meta content="https://github.com/9551-Dev.png" property="og:image" />
+    <meta content="#ff8156" data-react-helmet="true" name="theme-color" />
+    
+
+    <title>Biography</title>
+    <link rel="stylesheet" href="core/style.css">
+</head>
+<body>
+    <script>
+        const saved_dark_mode = localStorage.getItem("darkMode");
+        if (saved_dark_mode === "enabled" || saved_dark_mode === null) {
+            document.body.classList.add("dark-mode");
+        }
+        if (saved_dark_mode === null) {
+            localStorage.setItem("darkMode","enabled");
+        }
+    </script>
+    <div class="container">
+        <div class="header-box">
+            <h1><span style='color:DodgerBlue'>My Biography</span></h1>
+            <div class="button-container">
+                <button class="header-btn back-button" onclick="location.href='..'">Back</button>
+                <div class="button-wrapper">
+                    <button class="header-btn-lightmode" onclick="toggle_dark_mode()">Toggle Light Mode</button>
+                    <button class="header-btn-dir" onclick="location.href='./dir.html'">View directory</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="markdown-container" >
+    <h1>BIOGRAPHY</h1>
+<p>Hi, my name is Pelayo and I am a 17 year old Spanish guy fond of electronics and RF, although I also like audio and sound.</p>
+<p>In electronics I usually do things like:</p>
+<ul>
+<li>audio amplifiers</li>
+<li>laser.</li>
+<li>experimenting with leds of different colors and powers, and some homemade flashlight</li>
+<li>oscillators(although this could also fall into RF)</li>
+<li>random useless devices but that are funny</li>
+</ul>
+<p>And within electronics I also love high voltage and I made things like tesla coils, flyback inverters&hellip;</p>
+<p>In RF I am a bit newer but I also do things like:</p>
+<ul>
+<li>listening to the spectrum with an sdr and decoding</li>
+<li>transmitting <strong>IN LOW POWER</strong> at different frequencies</li>
+<li>copying remotes</li>
+<li>transmitting digital signals with cheap modules</li>
+<li>a bit of RFID</li>
+</ul>
+<p>I am also an excellent programmer (lie, I know some C++ and that&rsquo;s it)</p>
+<p><br>
+For a few months now I started to like vacuum tubes and for now I am collecting them, and I hope to use them someday. My favorite tubes are the Soviet ones ☭♥️</p>
+<p><br>
+At some point in my life I would like to:</p>
+<ul>
+<li>get my amateur radio license(I was going to do it but I got lazy)</li>
+<li>try different gas discharge lamps</li>
+<li>use vacuum tubes</li>
+</ul>
+<p>I am short on money, that also limits me from doing things :c</p>
+<p><br>
+finally here are some useless facts about me:</p>
+<ul>
+<li>I am a bit shy</li>
+<li>the wavelength of my favorite color is 445nm</li>
+<li>my favorite instrument is the synthesizer, and the second favorite the electric guitar</li>
+<li>I love cores and the backrooms</li>
+<li>I find it very practical to make lists(it can be noticed by reading my biography)</li>
+</ul>
+<p>and I think that is all you need to know about me :)</p>
+        </div>
+        <div class="gallery">
+
+    
+        </div>
+            <div class="image-viewer" onclick="close_image_viewer()">
+                <span class="close-btn" onclick="close_image_viewer()">&times;</span>
+                <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
+                <div class="nav-arrows">
+                    <div class="nav-arrow nav-arrow-left" onclick="navigate_image(event, -1)">&#8249;</div>
+                    <div class="nav-arrow nav-arrow-right" onclick="navigate_image(event, 1)">&#8250;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="core/script.js"></script>
+</body>

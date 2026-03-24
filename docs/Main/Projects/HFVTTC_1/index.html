@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+
+    
+    <meta content="HFVTTC 1" property="og:title" />
+    <meta content="My first project with vacuum tubes" property="og:description" />
+    <meta content="https://github.com/9551-Dev" property="og:url" />
+    <meta content="https://github.com/9551-Dev.png" property="og:image" />
+    <meta content="#ff8156" data-react-helmet="true" name="theme-color" />
+    
+
+    <title>HFVTTC 1</title>
+    <link rel="stylesheet" href="core/style.css">
+</head>
+<body>
+    <script>
+        const saved_dark_mode = localStorage.getItem("darkMode");
+        if (saved_dark_mode === "enabled" || saved_dark_mode === null) {
+            document.body.classList.add("dark-mode");
+        }
+        if (saved_dark_mode === null) {
+            localStorage.setItem("darkMode","enabled");
+        }
+    </script>
+    <div class="container">
+        <div class="header-box">
+            <h1><span style='color:DodgerBlue'>HFVTTC 1</span></h1>
+            <div class="button-container">
+                <button class="header-btn back-button" onclick="location.href='..'">Back</button>
+                <div class="button-wrapper">
+                    <button class="header-btn-lightmode" onclick="toggle_dark_mode()">Toggle Light Mode</button>
+                    <button class="header-btn-dir" onclick="location.href='./dir.html'">View directory</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="markdown-container" >
+    <h1>HFVTTC 1</h1>
+<p>I had some vacuum tubes lying in a drawer forgotten and in the end I decided to make a project with the Soviet GU-50, it was the first time I used a vacuum tube and also a MOT so I have to say I was a bit nervous.</p>
+<hr />
+<h2>SCHEMATIC</h2>
+<p>since it was my first time using a vacuum tube I wanted to follow as closely as possible a schematic, so I based it on the circuit from Teslaundmehr  of the HFVTTC</p>
+<p><img alt="schematic" onclick="open_image_viewer(&quot;./images/schematic/schematic.png&quot;,true)" src="./images/schematic/schematic.png" /></p>
+<hr />
+<h2>ASSEMBLY</h2>
+<p>the assembly was quite simple due to the few components it required, some changes I had to make were replacing the Soviet feedback capacitor with a bank of 9 ceramic capacitors that give the same capacitance and withstand more voltage and due to lack of rigid cable I had to make the resonator with flexible cable (bad idea)</p>
+<p><img alt="assembly" onclick="open_image_viewer(&quot;./images/test1/assembly.jpg&quot;,true)" src="./images/test1/assembly.jpg" /></p>
+<hr />
+<h2>TEST TIME</h2>
+<p>after having everything assembled the time came to turn it on, but the result was not as I expected, the fluorescent lamp I had lit up but trying to activate the plasma flame was not stable, I also noticed that inside the tube quite a few arcs were jumping due to the poor performance and the consumption was mainly reactive.</p>
+<p><img alt="circuit_off" onclick="open_image_viewer(&quot;./images/test1/circuit_off.jpg&quot;,true)" src="./images/test1/circuit_off.jpg" />
+<img alt="circuit_on" onclick="open_image_viewer(&quot;./images/test1/circuit_on.jpg&quot;,true)" src="./images/test1/circuit_on.jpg" />
+<img alt="arc" onclick="open_image_viewer(&quot;./images/test1/arc.jpg&quot;,true)" src="./images/test1/arc.jpg" /></p>
+<p>on top of that, because of using flexible cable it couldn’t handle the weight and the capacitor plate fell and burned part of the winding</p>
+<p><img alt="burnt resonator" onclick="open_image_viewer(&quot;./images/test1/error.jpg&quot;,true)" src="./images/test1/error.jpg" /></p>
+<h2>UPDATE (TROUBLESHOOTING AND TEST 2)</h2>
+<p>I knew it had something to do with the resonator and capacitive feedback, so I rewound the resonator (this time using solid wire), removed the ball where the plasma was supposed to form, and replaced the two-plate feedback capacitor with a ring-shaped one.
+Now the performance improved to what I expected and even more 😍, eliminating a large part of the reactive consumption and managing to generate a flame of more than 9 cm.
+Unlike the HFVTTC in Teslaundmehr’s video (which produced a nice stable CW flame), my circuit produced a strong sound at the mains frequency and the flame takes on the shape of that frequency (a mix between Teslaundmehr’s plasma flame and Styropyro’s diabolical ray). I’m not worried because I know that can be fixed with a full bridge or by increasing the capacitance.
+here are some photos of the results along with a <strong><a href="https://youtu.be/OfAEsscIMT4?si=tuIm_JnlAh6A4bfI">video</a></strong></p>
+<p><img alt="circuit_off" onclick="open_image_viewer(&quot;./images/test2/circuit_off.jpg&quot;,true)" src="./images/test2/circuit_off.jpg" />
+<img alt="circuit_on" onclick="open_image_viewer(&quot;./images/test2/circuit_on.jpg&quot;,true)" src="./images/test2/circuit_on.jpg" />
+<img alt="arc" onclick="open_image_viewer(&quot;./images/test2/arc.jpg&quot;,true)" src="./images/test2/arc.jpg" /></p>
+<p>in conclusion I ended up quite happy with this project even though my GU-50 didn’t like it that much</p>
+<p><img alt="hot_tube" onclick="open_image_viewer(&quot;./images/tube/hot_tube.jpg&quot;,true)" src="./images/tube/hot_tube.jpg" />
+<img alt="melted_tube" onclick="open_image_viewer(&quot;./images/tube/melted_tube.jpg&quot;,true)" src="./images/tube/melted_tube.jpg" /></p>
+        </div>
+        <div class="gallery">
+
+    <h2 class='image-group-header'>test1</h2>
+            <img src="images/test1/circuit_on.jpg" alt="circuit_on.jpg" onclick="open_image_viewer('images/test1/circuit_on.jpg')">
+            <img src="images/test1/circuit_off.jpg" alt="circuit_off.jpg" onclick="open_image_viewer('images/test1/circuit_off.jpg')">
+            <img src="images/test1/error.jpg" alt="error.jpg" onclick="open_image_viewer('images/test1/error.jpg')">
+            <img src="images/test1/assembly.jpg" alt="assembly.jpg" onclick="open_image_viewer('images/test1/assembly.jpg')">
+            <img src="images/test1/arc.jpg" alt="arc.jpg" onclick="open_image_viewer('images/test1/arc.jpg')"><h2 class='image-group-header'>test2</h2>
+            <img src="images/test2/circuit_on.jpg" alt="circuit_on.jpg" onclick="open_image_viewer('images/test2/circuit_on.jpg')">
+            <img src="images/test2/circuit_off.jpg" alt="circuit_off.jpg" onclick="open_image_viewer('images/test2/circuit_off.jpg')">
+            <img src="images/test2/arc.jpg" alt="arc.jpg" onclick="open_image_viewer('images/test2/arc.jpg')"><h2 class='image-group-header'>schematic</h2>
+            <img src="images/schematic/schematic.png" alt="schematic.png" onclick="open_image_viewer('images/schematic/schematic.png')"><h2 class='image-group-header'>tube</h2>
+            <img src="images/tube/photo_1.jpg" alt="photo_1.jpg" onclick="open_image_viewer('images/tube/photo_1.jpg')">
+            <img src="images/tube/hot_tube.jpg" alt="hot_tube.jpg" onclick="open_image_viewer('images/tube/hot_tube.jpg')">
+            <img src="images/tube/photo_2.jpg" alt="photo_2.jpg" onclick="open_image_viewer('images/tube/photo_2.jpg')">
+            <img src="images/tube/melted_tube.jpg" alt="melted_tube.jpg" onclick="open_image_viewer('images/tube/melted_tube.jpg')">
+        </div>
+            <div class="image-viewer" onclick="close_image_viewer()">
+                <span class="close-btn" onclick="close_image_viewer()">&times;</span>
+                <img id="viewer-image" class="viewed-image" src="" alt="Viewer Image" onclick="zoom_image(event)">
+                <div class="nav-arrows">
+                    <div class="nav-arrow nav-arrow-left" onclick="navigate_image(event, -1)">&#8249;</div>
+                    <div class="nav-arrow nav-arrow-right" onclick="navigate_image(event, 1)">&#8250;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="core/script.js"></script>
+</body>
