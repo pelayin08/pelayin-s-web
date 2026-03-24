@@ -7,7 +7,7 @@ I had some vacuum tubes lying in a drawer forgotten and in the end I decided to 
 
 since it was my first time using a vacuum tube I wanted to follow as closely as possible a schematic, so I based it on the circuit from Teslaundmehr  of the HFVTTC
 
-![schematic](pictures/Projects/hfvttc1/schematic/schematic.png)
+![schematic](__IMAGE__/schematic/schematic.png)
 
 ---
 
