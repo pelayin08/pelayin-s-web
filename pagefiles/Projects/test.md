@@ -3,7 +3,7 @@ I had some vacuum tubes lying in a drawer forgotten and in the end I decided to 
 
 ---
 
-SCHEMATIC
+##SCHEMATIC
 
 since it was my first time using a vacuum tube I wanted to follow as closely as possible a schematic, so I based it on the circuit from Teslaundmehr  of the HFVTTC
 
@@ -11,7 +11,7 @@ ffoottoo
 
 ---
 
-ASSEMBLY
+##ASSEMBLY
 
 the assembly was quite simple due to the few components it required, some changes I had to make were replacing the Soviet feedback capacitor with a bank of 9 ceramic capacitors that give the same capacitance and withstand more voltage and due to lack of rigid cable I had to make the resonator with flexible cable (bad idea)
 
@@ -19,7 +19,7 @@ ffoottoo
 
 ---
 
-TEST TIME
+##TEST TIME
 
 after having everything assembled the time came to turn it on, but the result was not as I expected, the fluorescent lamp I had lit up but trying to activate the plasma flame was not stable, I also noticed that inside the tube quite a few arcs were jumping due to the poor performance and the consumption was mainly reactive.
 
@@ -31,7 +31,7 @@ ffoottoo
 
 ---
 
-UPDATE (TROUBLESHOOTING AND TEST 2)
+##UPDATE (TROUBLESHOOTING AND TEST 2)
 
 I knew it had something to do with the resonator and capacitive feedback, so I rewound the resonator (this time using solid wire), removed the ball where the plasma was supposed to form, and replaced the two-plate feedback capacitor with a ring-shaped one.
 Now the performance improved to what I expected and even more 😍, eliminating a large part of the reactive consumption and managing to generate a flame of up to 2 cm.
