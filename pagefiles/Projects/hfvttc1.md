@@ -15,7 +15,7 @@ since it was my first time using a vacuum tube I wanted to follow as closely as 
 
 the assembly was quite simple due to the few components it required, some changes I had to make were replacing the Soviet feedback capacitor with a bank of 9 ceramic capacitors that give the same capacitance and withstand more voltage and due to lack of rigid cable I had to make the resonator with flexible cable (bad idea)
 
-ffoottoo
+![assembly](__IMAGE__/test1/assembly.png)
 
 ---
 
@@ -23,13 +23,13 @@ ffoottoo
 
 after having everything assembled the time came to turn it on, but the result was not as I expected, the fluorescent lamp I had lit up but trying to activate the plasma flame was not stable, I also noticed that inside the tube quite a few arcs were jumping due to the poor performance and the consumption was mainly reactive.
 
-ffoottoo
+![circuit_off](__IMAGE__/test1/circuit_off.png)
+![circuit_on](__IMAGE__/test1/circuit_on.png)
+![arc](__IMAGE__/test1/arc.png)
 
 on top of that, because of using flexible cable it couldn’t handle the weight and the capacitor plate fell and burned part of the winding
 
-ffoottoo
-
----
+![burnt resonator](__IMAGE__/test1/error.png)
 
 ##UPDATE (TROUBLESHOOTING AND TEST 2)
 
